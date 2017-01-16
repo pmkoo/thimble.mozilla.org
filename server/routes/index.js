@@ -21,6 +21,7 @@ module.exports = function() {
         require("./main"),
         require("./projects"),
         require("./files"),
+        require("./wechat"),
         require("./tutorials")
       ].forEach(function(module) {
         module.init(app, middleware, config);

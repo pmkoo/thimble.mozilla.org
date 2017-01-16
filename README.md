@@ -1,6 +1,6 @@
 Thimble
 ==================
-
+ok
 [![Build Status](https://travis-ci.org/mozilla/thimble.mozilla.org.svg)](https://travis-ci.org/mozilla/thimble.mozilla.org)
 [![Shipping fast with zenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com)
 

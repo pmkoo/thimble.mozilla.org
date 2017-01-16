@@ -18,6 +18,7 @@ module.exports = function localize(server, options) {
 
   // Redirect routes without the locale in the url to one with it.
   server.use(function(req, res, next) {
+    return next();
     // Do not redirect to a url with the locale if the route is in the `exclude` list
     if(excludeLocaleInUrl.indexOf(req.path) !== -1) {
       return next();

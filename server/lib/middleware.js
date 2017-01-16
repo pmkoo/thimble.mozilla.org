@@ -57,8 +57,8 @@ module.exports = function middlewareConstructor() {
         return next();
       }
 
-      let locale = (req.localeInfo && req.localeInfo.lang) ? req.localeInfo.lang : "en-US";
-      res.redirect(301, `/${locale}`);
+      // let locale = (req.localeInfo && req.localeInfo.lang) ? req.localeInfo.lang : "en-US";
+      // res.redirect(301, `/${locale}`);
     },
 
     /**
@@ -87,7 +87,7 @@ module.exports = function middlewareConstructor() {
       if(req.session.user) {
         next();
       } else {
-        res.redirect(307, `/${locale}/anonymous/${uuid.v4()}${qs}`);
+        res.redirect(307, `/anonymous/${uuid.v4()}${qs}`);
       }
     },
 

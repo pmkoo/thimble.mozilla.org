@@ -1,0 +1,12 @@
+<ul>
+    {% for  topic in topics %}
+    <li>
+        <a href="/weixin/read/{{topic.id}}" target="_blank">
+
+        {{topic.title}}
+        <br>
+        {{topic.abstract}}
+            <br>
+    </a></li>
+    {% endfor %}
+</ul>

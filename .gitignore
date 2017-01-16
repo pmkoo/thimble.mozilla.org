@@ -9,3 +9,5 @@ locale/**/*.json
 public/stylesheets/userbar.css
 dist/
 client/
+.idea
+.git
